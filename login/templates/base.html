@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+{% load staticfiles %}
+<html>
+
+	
+	{# Display a form #}
+    <head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <!-- < style="background: url('{{ STATIC_URL }}bootstrap1/images/sample.jpg') no-repeat"></td>  -->
+    <!-- <p><img src="{{ STATIC_URL }}bootstrap1/images/sample.jpg" /></p> -->
+    <!-- <img src="{http://www.morphballs.com/wp-content/uploads/2015/05/patterns-blue-abstract-light-3d-background-wallpapers-hd-wallpaper-high-the-best-blue-colour-3d-background-wallpapers-1024x643.jpg" />< -->
+<style> 
+div{
+    background: url("http://www.freebiesgallery.com/wp-content/uploads/2013/08/light-blue-background-1.jpg") 
+    no-repeat center center fixed; 
+    background-size: cover;
+}
+</style><div align='center' class="table-responsive">
+    <title>
+	Django Login Application |
+        {% block title %}{% endblock %}</title>
+
+    </head>
+
+    <!-- <body background="http://www.freebiesgallery.com/wp-content/uploads/2013/08/light-blue-background-1.jpg"> -->
+    
+    <body>
+
+	   
+        <h1>{% block head %}{% endblock %}</h1>
+        {% block content %}{% endblock %}
+	   
+    </body></div>
+</html>
+
+<!-- style="background:url('backgrnd.png'); background-repeat: no-repeat; background-size: 100% 100%;" >
+ -->
+<!-- html {
+    background: url(img_flower.jpg) no-repeat center center fixed; 
+    background-size: cover;
+} -->
+
+
+
